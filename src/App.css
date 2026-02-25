@@ -1,0 +1,138 @@
+ body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f9fafb; 
+}
+
+.tracker-wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 2rem 1rem; 
+
+}
+.tracker-container {
+  max-width: 600px;
+  width: 100%;
+  margin: auto; 
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  background-color: white;
+}
+
+.tracker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f3f4f6;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tracker-header h2 {
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.control-select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+}
+
+.btn-refresh {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #3b82f6;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+.btn-toggle {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #3b82f6;
+  background-color: transparent;
+  color: #3b82f6;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-toggle.active {
+  background-color: #eff6ff;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.card h4 {
+  margin: 0 0 0.25rem 0;
+}
+
+.card-next {
+  background-color: #ecfdf5;
+  border-color: #10b981;
+  border-width: 2px;
+  color: black;
+}
+
+.badge {
+  background-color: #10b981;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.time-text {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.arrival-time {
+  margin: 0 0 0.25rem 0;
+  color: #111827;
+}
+
+.card-next .arrival-time {
+  color: #059669;
+}
+
+.error-msg {
+  color: #ef4444;
+  padding: 1rem;
+  background-color: #fef2f2;
+  border-radius: 8px;
+}
+
+.empty-msg {
+  text-align: center;
+  padding: 2rem;
+  color: #6b7280;
+}
